@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+**members**
+**menna allah hossam elsabbagh**
+**shaimaa ahmed hamed abbas**
+**Basant Amr Mohammed ElMahdy**
+**Basmala Essam Mohamed Moustafa**
+**amal amr elsayed**
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawseela - Delivery Service</title>
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- link of css  -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="./index.html" style="text-decoration: none;">
+                        <h1 class="logo-text">Tawseela</h1>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-links">
+                        <li><a href="#Ride-Section" class="nav-link active" data-i18n="ride">Ride</a></li>
+                        <li><a href="#cta-section" class="nav-link" data-i18n="drive">Drive</a></li>
+                        <li><a href="./about.html" class="nav-link" data-i18n="about">About</a></li>
+                        <li><a href="#map-section" class="nav-link" data-i18n="findUs">Find us</a></li>
+                    </ul>
+                </div>
+
+                <div class="auth-group">
+                    <button id="langSwitcher" class="btn-lang">العربية</button>
+                    <a href="./login.html" class="btn-login" data-i18n="login">Log in</a>
+                    <a href="./signup.html" class="btn-signup" data-i18n="signup">Sign up</a>
+                </div>
+
+                <div class="menu-icon" id="menuIcon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="./assests/video/5750805-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1 data-i18n="heroTitle">Fast & Reliable Delivery</h1>
+            <p data-i18n="heroDesc">Get your packages delivered on time, every time.</p>
+            <a href="./ride.html" class="btn-hero" data-i18n="bookBtn">Book a Ride</a>
+        </div>
+    </section>
+
+    <section class="ride-options" id="Ride-Section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sectionTitle">Choose Your Ride</h2>
+            <div class="rides-grid">
+                <div class="ride-card">
+                    <div class="ride-badge" data-i18n="popular">Popular</div>
+                    <i class="fas fa-motorcycle ride-icon"></i>
+                    <h3 data-i18n="motoTitle">Tawseela Moto</h3>
+                    <p data-i18n="motoDesc">Affordable, everyday rides</p>
+                    <a href="./moto.html" class="btn-select-link">
+                        <button class="btn-select" data-i18n="motoBtn">Moto</button>
+                    </a>
+                </div>
+
+                <div class="ride-card active-card">
+                    <i class="fa-solid fa-car-side ride-icon"></i>
+                    <h3 data-i18n="carTitle">Comfort Car</h3>
+                    <p data-i18n="carDesc">Newer cars with extra legroom</p>
+                    <a href="./car.html" class="btn-select-link">
+                        <button class="btn-select" data-i18n="carBtn">Car</button>
+                    </a>
+                </div>
+
+                <div class="ride-card">
+                    <i class="fa-solid fa-van-shuttle ride-icon"></i>
+                    <h3 data-i18n="vanTitle">Tawseela Van</h3>
+                    <p data-i18n="vanDesc">Perfect for groups & luggage</p>
+                    <a href="./van.html" class="btn-select-link">
+                        <button class="btn-select" data-i18n="vanBtn">Van</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta-section">
+        <div class="cta-container">
+            <a href="./Drive.html" class="cta-btn driver" data-i18n="driveBtn">Driver</a>
+            <a href="./ride.html" class="cta-btn ride" data-i18n="rideBtn">Ride</a>
+        </div>
+    </section>
+
+    <section class="map-section" id="map-section">
+        <h2 class="map-title" data-i18n="findUsTitle">Find Us</h2>
+        <div class="map-container">
+            <div class="map-info">
+                <h3 data-i18n="hqTitle">Our Headquarters</h3>
+                <p data-i18n="address">123 Tawseela St, Cairo</p>
+                <p><span data-i18n="callUs">Call:</span> <a href="tel:+2012001200120">+20 120 01200120</a></p>
+                <a href="https://maps.google.com" target="_blank" class="btn-directions" data-i18n="getDirections">Get Directions</a>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123456789!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v123456789"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h1 class="footer-logo-text">TAWSEELA<span>....</span></h1>
+            </div>
+
+            <div class="footer-company">
+                <h2 data-i18n="footerCompany">COMPANY</h2>
+                <p data-i18n="footerAboutText">Providing the fastest and safest delivery solutions in the region since 2026.</p>
+            </div>
+
+            <div class="footer-services">
+                <h2 data-i18n="footerServices">SERVICES</h2>
+                <ul>
+                    <li><a href="./ride.html" data-i18n="footerRider">Rider</a></li>
+                    <li><a href="./Drive.html" data-i18n="footerDriver">Driver</a></li>
+                    <li><a href="./about.html" data-i18n="footerAbout">About</a></li>
+                    <li><a href="./index.html#map-section" data-i18n="footerFindUs">Find Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h2 data-i18n="footerContact">CONTACT US</h2>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tawseela. <span data-i18n="copyright">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="./assests/js/main.js"></script>
+</body>
+
+</html>

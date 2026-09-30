@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Tawseela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/payment.css">
+</head>
+<body>
+
+    <!-- Back to Home -->
+    <a href="./index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+    <section class="payment-section">
+        <div class="payment-wrapper">
+
+            <!-- Ride Summary -->
+            <div class="ride-summary">
+                <h3>Ride Summary</h3>
+                <p><strong>Ride Type:</strong> Comfort Car</p>
+                <p><strong>Pickup:</strong> Cairo</p>
+                <p><strong>Destination:</strong> Giza</p>
+                <p><strong>Price:</strong> 150 EGP</p>
+            </div>
+
+            <!-- Payment Form -->
+            <div class="payment-box">
+                <form id="bookingForm">
+                    <div class="input-group">
+                        <label>Card Holder Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" required>
+                        </div>
+                        <div class="input-group">
+                            <label>CVV</label>
+                            <input type="text" placeholder="123" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-pay">Pay Now</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

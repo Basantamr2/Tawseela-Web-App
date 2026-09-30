@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #e0eafc, #f5f7fa);
+}
+/* Back to Home Button */
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    z-index: 999;
+    font-size: 1rem;
+}
+
+.back-home:hover {
+    transform: translateX(-5px);
+    color: #000;
+}
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    margin: 50px 0;
+}
+
+/* Cards Container */
+.all-scooter .contain {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Single Card */
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    align-items: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Reverse layout for alternate cards */
+.cards.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image */
+.cards .image {
+    flex: 1;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Text content */
+.cards .para {
+    flex: 1;
+}
+
+.cards h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.cards p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Button */
+.cards .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cards .btn:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards.reverse {
+        flex-direction: column;
+    }
+    .cards .image,
+    .cards .para {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .cards {
+        padding: 20px;
+        gap: 15px;
+    }
+    .cards h3 {
+        font-size: 24px;
+    }
+}
